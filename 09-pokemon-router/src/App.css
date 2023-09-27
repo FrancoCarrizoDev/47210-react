@@ -1,0 +1,17 @@
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pending {
+    background-color: #ff9800;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    background-color: lightblue;
+}
