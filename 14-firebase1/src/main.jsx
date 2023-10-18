@@ -6,12 +6,12 @@ import CartProvider from "./context/cart.provider.jsx";
 import { ChakraProvider } from "@chakra-ui/react";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA1tLfJWD-lZeRis1X1ZH-4LZZmPmoRc-Y",
-  authDomain: "react-app-aa08e.firebaseapp.com",
-  projectId: "react-app-aa08e",
-  storageBucket: "react-app-aa08e.appspot.com",
-  messagingSenderId: "435174354176",
-  appId: "1:435174354176:web:c47099424d40e4fca397e5",
+  apiKey: import.meta.env.VITE_FIRASE_API_KEY, // si usamos create-react-app debemos usar process.env.nombre_variable
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 initializeApp(firebaseConfig);
